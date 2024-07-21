@@ -43,9 +43,6 @@ steps:
   - 'ENABLE_TUNING=$_ENABLE_TUNING'
   dir: $_PIPELINE_FOLDER
 
-env:
-  - name: CLOUD_BUILD_LOG_LEVEL
-    LOGGING
 
 # Push the custom image to Container Registry 
 images: ['gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME']
